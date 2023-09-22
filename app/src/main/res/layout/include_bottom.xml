@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondaryDark"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <github.com.st235.lib_expandablebottombar.ExpandableBottomBar
+        android:id="@+id/expandable_bottom_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:theme="@style/BottomBarInfo"
+        app:exb_backgroundCornerRadius="25dp"
+        app:exb_backgroundColor="@color/white"
+        app:exb_itemInactiveColor="@color/black"
+        app:exb_notificationBadgeBackgroundColor="@color/teal_200"
+        app:exb_notificationBadgeTextColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <github.com.st235.lib_expandablebottombar.ExpandableBottomBar
+        android:id="@+id/expandable_bottom_bar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:theme="@style/BottomBarInfo"
+        app:exb_backgroundCornerRadius="25dp"
+        app:exb_backgroundColor="@color/white"
+        app:exb_itemInactiveColor="@color/black"
+        app:exb_notificationBadgeBackgroundColor="@color/teal_200"
+        app:exb_notificationBadgeTextColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/expandable_bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <github.com.st235.lib_expandablebottombar.ExpandableBottomBar
+        android:id="@+id/expandable_bottom_bar3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        app:exb_backgroundCornerRadius="25dp"
+        android:theme="@style/BottomBarInfo"
+        app:exb_backgroundColor="@color/white"
+        app:exb_itemInactiveColor="@color/black"
+        app:exb_notificationBadgeBackgroundColor="@color/teal_200"
+        app:exb_notificationBadgeTextColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/expandable_bottom_bar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
